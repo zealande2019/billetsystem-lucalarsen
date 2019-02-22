@@ -2,30 +2,27 @@
 
 namespace BilletLibrary
 {
-    public class Bil
+    public class Bil : TransportMiddel
     {
-        public string Nummerplade { get; set; }
-        public DateTime dato { get; set; }
+
 
         /// <summary>
-        /// en metode som skal retunere pris på en bil
+        /// en override på metoden pris i TransportMiddel
+        /// prisen på en Bil
         /// </summary>
         /// <returns>decimal 240</returns>
-        public decimal Pris()
+        public override decimal Pris()
         {
-            decimal pris = 240;
-
-            return pris;
+            return 240;
         }
         /// <summary>
-        /// en metode som skal retunere navnet på køretøjet
+        /// en override på metoden Køretøj i TransportMiddel
+        /// navnet på køretøjet
         /// </summary>
         /// <returns>string bil</returns>
-        public string Køretøj()
+        public override string Køretøj()
         {
-            string køretøj = "Bil";
-
-            return køretøj;
+            return "Bil";
         }
     }
 }
