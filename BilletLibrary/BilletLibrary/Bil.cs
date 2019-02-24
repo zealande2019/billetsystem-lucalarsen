@@ -13,7 +13,9 @@ namespace BilletLibrary
         /// <returns>decimal 240</returns>
         public override decimal Pris()
         {
-            return 240;
+            decimal prismedrabat = 240 - Rabat;
+
+            return prismedrabat;
         }
         /// <summary>
         /// en override på metoden Køretøj i TransportMiddel
@@ -23,6 +25,21 @@ namespace BilletLibrary
         public override string Køretøj()
         {
             return "Bil";
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public Bil()
+            : base()
+        {
+
+        }
+
+        public Bil(decimal rabat)
+            : base()
+        {
+
         }
     }
 }

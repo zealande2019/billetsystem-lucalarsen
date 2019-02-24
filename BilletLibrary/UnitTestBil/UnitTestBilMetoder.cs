@@ -30,5 +30,17 @@ namespace UnitTestBil
             //Assert
             Assert.AreEqual("Bil", navn);
         }
+        [TestMethod]
+        public void TestMethodPrisRabat()
+        {
+            //Arrange
+            Bil nybil = new Bil(12);
+
+            //Act
+            decimal pris = nybil.Pris();
+
+            //Assert
+            Assert.AreEqual(228, pris);
+        }
     }
 }
