@@ -24,5 +24,12 @@ namespace BilletLibrary
         {
             return "MC";
         }
+
+        public override decimal BroBizz()
+        {
+            decimal brobizz = 125 - (125 / 100 * 5);
+
+            return brobizz;
+        }
     }
 }

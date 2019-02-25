@@ -34,10 +34,10 @@ namespace UnitTestBil
         public void TestMethodPrisRabat()
         {
             //Arrange
-            Bil nybil = new Bil(12);
+            Bil nybil = new Bil();
 
             //Act
-            decimal pris = nybil.Pris();
+            double pris = nybil.BroBizz();
 
             //Assert
             Assert.AreEqual(228, pris);

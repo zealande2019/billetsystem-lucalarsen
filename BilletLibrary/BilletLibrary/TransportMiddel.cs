@@ -25,28 +25,14 @@ namespace BilletLibrary
         public decimal Rabat { get; set; }
 
 
-        /// <summary>
-        /// default constructor
-        /// </summary>
-        public TransportMiddel()
-        {
-
-        }
-
-        /// <summary>
-        /// en constructor til rabat
-        /// </summary>
-        /// <param name="rabat"></param>
-        public TransportMiddel(decimal rabat)
-        {
-            this.Rabat = rabat;
-        }
 
         /// <summary>
         /// abstract metode til pris på et køretøj
         /// </summary>
         /// <returns></returns>
         public abstract decimal Pris();
+
+        public abstract decimal BroBizz();
 
         /// <summary>
         /// abstract metode til navn på et køretøj
