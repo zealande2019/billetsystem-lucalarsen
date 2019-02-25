@@ -37,7 +37,7 @@ namespace UnitTestBil
             Bil nybil = new Bil();
 
             //Act
-            double pris = nybil.BroBizz();
+            decimal pris = nybil.BroBizz();
 
             //Assert
             Assert.AreEqual(228, pris);

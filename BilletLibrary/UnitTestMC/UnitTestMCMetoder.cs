@@ -30,5 +30,18 @@ namespace UnitTestMC
             //assert
             Assert.AreEqual("MC", navn);
         }
+
+        [TestMethod]
+        public void TestMethodPrisRabat()
+        {
+            //Arrange
+            MC nyMC = new MC();
+
+            //Act
+            decimal pris = nyMC.BroBizz();
+
+            //Assert
+            Assert.AreEqual(119, pris);
+        }
     }
 }

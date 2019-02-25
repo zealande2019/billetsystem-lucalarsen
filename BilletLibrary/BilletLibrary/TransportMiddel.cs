@@ -10,19 +10,25 @@ namespace BilletLibrary
     public abstract class TransportMiddel
     {
         /// <summary>
-        /// nummerpladen på et køretøj
+        /// nummerpladen på et køretøj, nummerpladen må ikke være mere end 7 tegn
         /// </summary>
-        public string Nummerplade { get; set; }
+        public string Nummerplade
+        {
+            get { return Nummerplade; }
+            set
+            {
+
+                if (Nummerplade.Length > 7)
+                {
+                    throw new Exception();
+                }
+            }
+        }
 
         /// <summary>
         /// datoen på billet køb
         /// </summary>
         public DateTime dato { get; set; }
-
-        /// <summary>
-        /// rabat til brobizz
-        /// </summary>
-        public decimal Rabat { get; set; }
 
 
 
@@ -32,6 +38,10 @@ namespace BilletLibrary
         /// <returns></returns>
         public abstract decimal Pris();
 
+        /// <summary>
+        /// abstract metode til brobizz rabat
+        /// </summary>
+        /// <returns></returns>
         public abstract decimal BroBizz();
 
         /// <summary>

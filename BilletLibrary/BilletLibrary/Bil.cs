@@ -6,6 +6,7 @@ namespace BilletLibrary
     {
 
 
+
         /// <summary>
         /// en override på metoden pris i TransportMiddel
         /// prisen på en Bil
@@ -25,9 +26,13 @@ namespace BilletLibrary
             return "Bil";
         }
 
+        /// <summary>
+        /// en override på metoden til brobizz rabat
+        /// </summary>
+        /// <returns></returns>
         public override decimal BroBizz()
         {
-            decimal rabat = 240 / 100 * 5;
+            decimal rabat = 240 * 5 / 100;
 
             decimal brobizz = 240 - rabat;
 

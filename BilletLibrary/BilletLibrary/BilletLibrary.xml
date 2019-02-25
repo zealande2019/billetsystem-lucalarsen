@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BilletLibrary</name>
+    </assembly>
+    <members>
+        <member name="M:BilletLibrary.Bil.Pris">
+            <summary>
+            en override på metoden pris i TransportMiddel
+            prisen på en Bil
+            </summary>
+            <returns>decimal 240</returns>
+        </member>
+        <member name="M:BilletLibrary.Bil.Køretøj">
+            <summary>
+            en override på metoden Køretøj i TransportMiddel
+            navnet på køretøjet
+            </summary>
+            <returns>string bil</returns>
+        </member>
+        <member name="M:BilletLibrary.Bil.BroBizz">
+            <summary>
+            en override på metoden til brobizz rabat
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BilletLibrary.MC.Pris">
+            <summary>
+            en override på metoden pris i TransportMiddel
+            prisen på en MC
+            </summary>
+            <returns>decimal 125</returns>
+        </member>
+        <member name="M:BilletLibrary.MC.Køretøj">
+            <summary>
+            en override på metoden Køretøj i TransportMiddel
+            navnet på køretøjet
+            </summary>
+            <returns>string MC</returns>
+        </member>
+        <member name="M:BilletLibrary.MC.BroBizz">
+            <summary>
+            en override på metoden til brobizz rabat
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:BilletLibrary.TransportMiddel">
+            <summary>
+            en abstract klasse som alle køretøjer skal arve fra
+            </summary>
+        </member>
+        <member name="P:BilletLibrary.TransportMiddel.Nummerplade">
+            <summary>
+            nummerpladen på et køretøj
+            </summary>
+        </member>
+        <member name="P:BilletLibrary.TransportMiddel.dato">
+            <summary>
+            datoen på billet køb
+            </summary>
+        </member>
+        <member name="M:BilletLibrary.TransportMiddel.Pris">
+            <summary>
+            abstract metode til pris på et køretøj
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BilletLibrary.TransportMiddel.BroBizz">
+            <summary>
+            abstract metode til brobizz rabat
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BilletLibrary.TransportMiddel.Køretøj">
+            <summary>
+            abstract metode til navn på et køretøj
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

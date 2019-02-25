@@ -6,6 +6,8 @@ namespace BilletLibrary
 {
     public class MC : TransportMiddel
     {
+
+
         /// <summary>
         /// en override på metoden pris i TransportMiddel
         /// prisen på en MC
@@ -25,9 +27,14 @@ namespace BilletLibrary
             return "MC";
         }
 
+
+        /// <summary>
+        /// en override på metoden til brobizz rabat
+        /// </summary>
+        /// <returns></returns>
         public override decimal BroBizz()
         {
-            decimal brobizz = 125 - (125 / 100 * 5);
+            decimal brobizz = 125 - (125 * 5 / 100);
 
             return brobizz;
         }
