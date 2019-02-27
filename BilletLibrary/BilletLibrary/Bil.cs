@@ -5,7 +5,25 @@ namespace BilletLibrary
     public class Bil : TransportMiddel
     {
 
+        /// <summary>
+        /// default constructor
+        /// </summary>
+        public Bil() :
+            base()
+        {
 
+        }
+
+        /// <summary>
+        /// constructor med nummerplade og dato parametre
+        /// </summary>
+        /// <param name="Nummerplade"></param>
+        /// <param name="dato"></param>
+        public Bil(string Nummerplade, DateTime dato) : 
+            base(Nummerplade, dato)
+        {
+
+        }
 
         /// <summary>
         /// en override på metoden pris i TransportMiddel

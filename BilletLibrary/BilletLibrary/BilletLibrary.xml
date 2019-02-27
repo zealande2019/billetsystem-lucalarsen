@@ -4,6 +4,18 @@
         <name>BilletLibrary</name>
     </assembly>
     <members>
+        <member name="M:BilletLibrary.Bil.#ctor">
+            <summary>
+            default constructor
+            </summary>
+        </member>
+        <member name="M:BilletLibrary.Bil.#ctor(System.String,System.DateTime)">
+            <summary>
+            constructor med nummerplade og dato parametre
+            </summary>
+            <param name="Nummerplade"></param>
+            <param name="dato"></param>
+        </member>
         <member name="M:BilletLibrary.Bil.Pris">
             <summary>
             en override på metoden pris i TransportMiddel
@@ -51,13 +63,25 @@
         </member>
         <member name="P:BilletLibrary.TransportMiddel.Nummerplade">
             <summary>
-            nummerpladen på et køretøj
+            nummerpladen på et køretøj, nummerpladen må ikke være mere end 7 tegn
             </summary>
         </member>
         <member name="P:BilletLibrary.TransportMiddel.dato">
             <summary>
             datoen på billet køb
             </summary>
+        </member>
+        <member name="M:BilletLibrary.TransportMiddel.#ctor">
+            <summary>
+            default constructor
+            </summary>
+        </member>
+        <member name="M:BilletLibrary.TransportMiddel.#ctor(System.String,System.DateTime)">
+            <summary>
+            constructor med nummerplade og dato parametre
+            </summary>
+            <param name="Nummerplade"></param>
+            <param name="dato"></param>
         </member>
         <member name="M:BilletLibrary.TransportMiddel.Pris">
             <summary>

@@ -30,7 +30,23 @@ namespace BilletLibrary
         /// </summary>
         public DateTime dato { get; set; }
 
+        /// <summary>
+        /// default constructor
+        /// </summary>
+        public TransportMiddel()
+        {
 
+        }
+
+        /// <summary>
+        /// constructor med nummerplade og dato parametre
+        /// </summary>
+        /// <param name="Nummerplade"></param>
+        /// <param name="dato"></param>
+        public TransportMiddel(string Nummerplade, DateTime dato)
+        {
+
+        }
 
         /// <summary>
         /// abstract metode til pris på et køretøj

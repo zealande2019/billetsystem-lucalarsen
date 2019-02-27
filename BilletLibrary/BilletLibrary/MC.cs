@@ -6,7 +6,17 @@ namespace BilletLibrary
 {
     public class MC : TransportMiddel
     {
+        public MC() : 
+            base()
+        {
 
+        }
+
+        public MC(string Nummerplade, DateTime dato) :
+            base(Nummerplade, dato)
+        {
+
+        }
 
         /// <summary>
         /// en override på metoden pris i TransportMiddel
