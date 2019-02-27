@@ -44,7 +44,7 @@ namespace BilletLibrary
         /// <returns></returns>
         public override decimal BroBizz()
         {
-            decimal brobizz = 125 - (125 * 5 / 100);
+            decimal brobizz = 125 - ((125M / 100M) * 5);
 
             return brobizz;
         }
